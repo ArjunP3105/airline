@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',() => {
+                let Counter = 0;
+                document.querySelector('#increase').onclick = () => {
+                    Counter++ ;
+                    console.log("clicked")
+                    document.querySelector('#score').innerHTML = Counter;
+                };
+                document.querySelector("#decrease").onclick = () => {
+                    Counter--;
+                    console.log("clicked")
+                    document.querySelector('#score').innerHTML = Counter ;
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <h1 id ="score">0</h1>
+        <button id = "increase">+</button>
+        <button id = "decrease">-</button>
+    </body>
+</html>
